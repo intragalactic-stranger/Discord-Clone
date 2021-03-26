@@ -1,0 +1,454 @@
+@font-face{
+    font-family: "whitney light";
+    src: url("./assets/fonts/whitneylight.woff") format("woff");
+}
+@font-face{
+    font-family: "Whitney Medium";
+    src: url("./assets/fonts/whitneymedium.woff") format("woff");
+}
+@font-face{
+    font-family: "Whitney Bold";
+    src: url("./assets/fonts/whitneybold.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-size: 2rem;
+    font-family: "Whitney Light";
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.collaboration, .voice-channel, .moderation-tools, .video-call{
+    padding: 5.6rem 0;
+}
+
+.voice-channel, .video-call, .download{
+   
+    background-color: #f6f6f6;
+}
+
+.btn{
+    font-family: "Whitney Medium";
+}
+
+/* /////////////////////hero//////////////// */
+.hero{
+    background-image: url(./assets/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.main-header{
+    height: 8rem;
+}
+.container{
+    max-width:126rem;
+    margin: 0 auto;
+    padding: 0 3.4rem;
+}
+
+.logo{
+    width:13.4rem ;
+}
+
+.main-nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list{
+    display: none;
+}
+
+.nav-items-right{
+    display: flex;
+    align-items:center ;
+}
+.btn-small {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    border-radius: 2rem;
+}
+
+.btn-light{
+    background-color: #fff;
+    color: #23272a;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    box-shadow: 0 0.8rem 1.5rem rgba(0,0,0, 0.2);
+}
+
+.btn-light:hover{
+    color: #7289da;
+}
+
+.mobile-toggle{
+    color: #fff;
+    font-size: 3rem;
+    cursor:pointer;
+    display: flex;
+    margin-left:1rem ;
+}
+
+
+
+/* ---------------Hero section content--------- */
+
+.hero-content{
+    color: #fff;
+    padding: 5.6rem 0;
+}
+
+.title{
+    font-family:"Whitney Bold";
+}
+
+.primary-title{
+    font-size: 4.8rem;
+}
+
+.hero-description{
+    margin-top: 1.3rem;
+    line-height: 3.2rem;
+}
+
+.hero-btn-group .btn-large{
+    margin: 2.4rem 2.4rem 0 0;
+    display: inline-flex;
+}
+
+.hero-btn-group .btn-light i{
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.btn-large{
+    padding: 1.6rem 3.2rem;
+    border-radius: 4rem;
+}
+.btn-dark{
+    background-color: #23272a;
+    color: #fff;
+}
+
+.btn-dark:hover{
+    background-color: #36393f;
+}
+/* ...............collaboration.... */
+
+
+.text-group{
+    margin-top: 2rem;
+}
+
+.secondary-title{
+    font-size: 4rem;
+    color: #23272a;
+}
+.text-group p{
+    line-height: 3.2rem;
+    margin-top: 2rem;
+}
+
+.wave{
+    color: #f6f6f6;
+    display: block;
+}
+/* .............voice chaanel...... */
+
+.wave-inverted{
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+/* ............download.............. */
+
+.download{
+    text-align: center;
+}
+
+.download h2{
+    font-family:"Whitney Medium";
+}
+
+.btn-brand{
+    font-family:"Whitney Medium";
+    background-color: #7269da;
+    color: #fff;
+    margin: 4rem 0;
+    display: inline-flex;
+    transition: background-color 0.3s;
+}
+
+.btn-brand i{
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.btn-brand:hover{
+    background-color: #8ea1e1;
+}
+
+.download img{
+    margin: 0 auto;
+}
+
+/* ...................media............ */
+
+@media (min-width: 768px){
+
+    .primary-title{
+    font-size: 6rem;
+    }
+    
+    .secondary-title{
+        font-size: 4.8rem;
+    }
+
+    .collaboration, .voice-channel, .moderation-tools, .video-call{
+        padding: 6.5rem 0;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper img{
+        max-width: 60%;
+    }
+
+    .wrapper .text-group{
+        max-width: 40%;
+        padding: 0 1rem;
+        margin: auto 0;
+    }
+
+    .voice-channel .wrapper{
+        flex-direction: row-reverse;
+    }
+    
+    .video-call{
+        text-align: center;
+    }
+    .video-call img{
+        margin: 0  auto;
+    }
+    .hero-content{
+        width: 60rem;
+    }
+
+}
+
+@media(min-width:1024px){
+    .collaboration, .voice-channel, .moderation-tools, .video-call{
+        padding: 12rem 0;
+    }
+    .btn-open{
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+    }
+
+    .nav-list a{
+        color: #fff;
+        font-size: 1.6rem;
+        margin: 0 2rem;
+        font-family: "Whitney Medium";
+    }
+
+    .nav-list a:hover{
+        text-decoration: underline;
+    }
+
+    .hero-content{
+        text-align: center;
+        width: 75rem;
+        margin: 0 auto;
+        padding: 10rem 0;
+    }
+
+    
+}
+/* .........................footer........ */ 
+.main-footer{
+    background-color:#23272a;
+    padding-top: 80px;
+    padding-bottom: 64px;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+.h1{
+    font-size: 32px;
+    font-weight: 6rem;
+    font-family: "Whitney Medium";
+    color: #8ea1e1;
+}
+
+.row{
+    width: 100%;
+    max-width: 1260px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-around;
+    padding: 0 24px;
+    flex-wrap: wrap;
+    flex-shrink: 0;   
+}
+
+.detail{
+    justify-content:space-around;
+    display: flexbox;
+    flex-direction: column;
+    margin-bottom: 56px;
+    align-items: center;
+}
+
+.language{
+    display: flex;
+    align-items: center;
+    margin-top:24px ;
+    cursor: pointer;
+}
+
+.flag{
+    margin-right: 8px;
+    width: 24px;
+    height: 16px;
+} 
+
+.usa{
+    position: relative;
+    line-height: 18px;
+    font-size: 14px;
+}
+.delta{
+    color: #8ea1e1;
+    font-size: 100%;
+   font-weight: inherit;
+}
+
+.alpha{
+    color: #fff;
+    display: block;
+    line-height: 14px;
+}
+
+.link-list-right{
+    margin-bottom: 40px;
+    font-size: 16px;
+    flex-shrink: 0;
+    min-width:100px;
+    margin: 10px;
+    
+}
+.arrow{
+    padding-left: 8px;
+}
+
+.social{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    
+}
+ 
+.bh{
+    color: #fff;
+    font-size:xx-large;
+    padding: 2px;
+    margin-left: 24px;
+}
+.bxl-twitter{
+    margin-left: 0px;
+}
+
+.link-list{
+    color: #fff;
+    display: block;
+    padding-top: 8px;
+    margin-top: 8px;
+}
+
+.link-list:hover{
+        text-decoration: underline;
+}
+.cta-container{
+grid-column:span 4 ;
+}
+.terminator{
+    color: #7289da;
+    border-width: 0px;
+    height: 1px;
+    background-color: #7289da;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.cta{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    display: flex;
+}
+
+.Open{
+    font-family: "Whitney Medium";
+    background-color:#7289da;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    border-radius: 4rem;
+    padding: 11px 16px;
+    align-items: center;
+}
+
+.Open:hover{
+   box-shadow: 0 0.8rem 1.5rem rgba(0,0,0, 0.2);
+}
+
+.Discord:hover{
+    transition: background-color 0.2s;
+    color: #fff;
+    background-color: #8ea1e1;
+   
+}
+.end{
+    width: 100%;
+    max-width: 1260px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0 20px;
+    padding: 0 24px;
+}
