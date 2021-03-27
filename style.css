@@ -319,9 +319,10 @@ img{
     box-sizing: border-box;
     display: flex;
     justify-content:space-around;
-    padding: 0 24px;
+    padding: 30px 70px;
     flex-wrap: wrap;
     flex-shrink: 0;   
+    
 }
 
 .detail{
@@ -400,7 +401,7 @@ img{
 }
 
 .link-list:hover{
-        text-decoration: underline;
+     text-decoration: underline;
 }
 .cta-container{
 grid-column:span 4 ;
